@@ -1,44 +1,29 @@
-<h1 align="center">Hey, I'm Luis Gonzalez 👋</h1>
+# Luis Gonzalez
 
-<p align="center">
-  <strong>Programmer / Analyst @ Columbia Machine Inc.</strong>
-</p>
+**Software engineer. 4+ years of C# and .NET.**
 
-<p align="center">
-  <a href="https://transcend.kronic.one">
-    <img src="https://img.shields.io/badge/🚀_Transcendence-Live-8B5CF6?style=for-the-badge" alt="Transcendence" />
-  </a>
-  <a href="https://github.com/luisgon-dev">
-    <img src="https://img.shields.io/badge/GitHub-luisgon--dev-181717?style=for-the-badge&logo=github" alt="GitHub" />
-  </a>
-</p>
+I build backend services and the web apps on top of them, mostly ASP.NET Core with PostgreSQL behind a React or Next.js frontend. I like owning the whole path to production: tests in CI, signed releases, and dashboards that show when something breaks. I work as a Programmer Analyst at Columbia Machine in Vancouver, WA, building internal .NET applications and AI tooling.
 
----
+## Transcendence
 
-### 🛠️ Tech Stack
+League of Legends analytics. **[Live site](https://transcend.kronic.one)** · **[Source](https://github.com/luisgon-dev/Transcendence)**
 
-**Professional** &nbsp; · &nbsp; C# &nbsp;·&nbsp; .NET (ASP.NET / WinForms) &nbsp;·&nbsp; Entity Framework &nbsp;·&nbsp; Python &nbsp;·&nbsp; VB
+A .NET 10 worker crawls Riot's ranked ladders on 10 platforms and ingests matches into PostgreSQL. Hangfire jobs precompute tier lists, builds, and matchups, an ASP.NET Core API serves the results, and a Next.js 16 frontend renders them.
 
-**Personal** &nbsp; · &nbsp; Rust &nbsp;·&nbsp; TypeScript / JavaScript (React, Svelte) &nbsp;·&nbsp; Flutter / Dart &nbsp;·&nbsp; Java
+As of October 2026:
 
----
+- **560K+ matches** in a 300 GB PostgreSQL database, with about **23K new matches a day**
+- **CI on every PR:** xUnit, Testcontainers integration tests, an OpenAPI drift check, and k6 and Lighthouse performance budgets
+- **Deploys:** cosign-signed images and a pull-based deploy that verifies signatures, migrates first, and rolls back on failed health checks
+- **Observability:** OpenTelemetry metrics, 9 Grafana dashboards, and 18 alerts
 
-### 🎮 Active Project — [Transcendence](https://transcend.kronic.one)
+## Tech
 
-<a href="https://transcend.kronic.one">
-  <img src="https://img.shields.io/badge/League_of_Legends-Tier_Lists_%7C_Builds_%7C_Matchups_%7C_Pro_Builds-C89B3C?style=flat-square" alt="LoL Tools" />
-</a>
-&nbsp;
-<img src="https://img.shields.io/badge/TFT-Coming_Soon-555?style=flat-square" alt="TFT" />
-
-Patch-ready League of Legends and TFT analytics
-Check what's winning, compare builds & comps, and pull up player pages.
-
-> **[transcend.kronic.one](https://transcend.kronic.one)** &nbsp;·&nbsp; [Tier List](https://transcend.kronic.one/lol/tierlist) &nbsp;·&nbsp; [Champions](https://transcend.kronic.one/lol/champions) &nbsp;·&nbsp; [Matchups](https://transcend.kronic.one/lol/matchups) &nbsp;·&nbsp; [Pro Builds](https://transcend.kronic.one/lol/pro-builds)
-
----
-
-### Stats
+- **Languages:** C#, TypeScript, Python, Rust
+- **Backend:** .NET, ASP.NET Core, EF Core, Hangfire
+- **Data:** PostgreSQL, Redis
+- **Frontend:** React, Next.js
+- **Delivery and ops:** Docker, GitHub Actions, OpenTelemetry, Prometheus, Grafana
 
 <p align="center">
   <picture>
