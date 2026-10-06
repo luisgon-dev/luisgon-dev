@@ -12,7 +12,7 @@ A .NET 10 worker crawls Riot's ranked ladders on 10 platforms and ingests matche
 
 As of October 2026:
 
-- **560K+ matches** in a 300 GB PostgreSQL database, with about **23K new matches a day**
+- **500K+ matches** in a 300 GB PostgreSQL database, with about **23K new matches a day**
 - **CI on every PR:** xUnit, Testcontainers integration tests, an OpenAPI drift check, and k6 and Lighthouse performance budgets
 - **Deploys:** cosign-signed images and a pull-based deploy that verifies signatures, migrates first, and rolls back on failed health checks
 - **Observability:** OpenTelemetry metrics, 9 Grafana dashboards, and 18 alerts
